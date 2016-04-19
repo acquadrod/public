@@ -1426,6 +1426,8 @@ accordance with the terms of that agreement
 
     //hand rotation
     ext.getHandRotation = function(rotation_type, hand_side) {
+
+        counters.handrotation = 1;
         //make sure the extension is ready for use
         if (rsd.Status.status < 2) return -1000;
 
@@ -1484,6 +1486,7 @@ accordance with the terms of that agreement
 
 
     ext.isFaceExist = function () {
+
         //make sure the extension is ready for use
         if (rsd.Status.status < 2) return false;
 
@@ -1717,11 +1720,13 @@ accordance with the terms of that agreement
         //make sure the extension is ready for use
         if (rsd.Status.status < 2) return false;
 
+
         counters = {};
+        console.log(counters);
     };
 
     ext.send_counters = function () {
-
+      console.log (counters);
       $.ajax({
         type: "POST",
         url: "http://www.acquadro.it/post",
