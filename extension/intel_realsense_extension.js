@@ -63,7 +63,7 @@ accordance with the terms of that agreement
     var blobConfiguration, handConfiguration, faceConfiguration;
     var imageSize;
 
-    var counters = {}:
+    var counters = {};
 
 
 
