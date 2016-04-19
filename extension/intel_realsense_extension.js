@@ -1750,8 +1750,8 @@ accordance with the terms of that agreement
             ,['b', 'user said anything?', 'hasUserSaidAnything']
             ,['r', 'last word user said', 'getRecognizedSpeech']
         ,['-']
-            ,[' ', 'init counters', init_counters]
-            ,[' ', 'send counters', send_counters]
+            ,[' ', 'init counters', 'init_counters']
+            ,[' ', 'send counters', 'send_counters']
 
         ]
 
