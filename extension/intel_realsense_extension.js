@@ -1312,6 +1312,8 @@ accordance with the terms of that agreement
 
 
     ext.getHandGesture = function(hand_side, gesture_name) {
+
+      counters.handGesture = 1;
         //make sure the extension is ready for use
         if (rsd.Status.status < 2) return false;
 
