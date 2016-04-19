@@ -1728,7 +1728,7 @@ accordance with the terms of that agreement
     };
 
     ext.send_counters = function () {
-      console.log (counters);
+      console.log (" - " + counters);
       $.ajax({
         type: "POST",
         url: "http://www.acquadro.it/post",
