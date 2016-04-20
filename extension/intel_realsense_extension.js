@@ -1733,8 +1733,12 @@ accordance with the terms of that agreement
       $.ajax({
         type: "POST",
         dataType: "json",
+        contentType: "application/json; charset=utf-8",
         url: "http://testbotd4.azurewesites.net/post",
-        data: counters
+        data: counters,
+        failure: function(errMsg) {
+            alert(errMsg);
+        }
       });
 
     }
