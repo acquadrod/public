@@ -1731,7 +1731,7 @@ accordance with the terms of that agreement
       console.log (" - " + counters);
       $.ajax({
         type: "POST",
-        url: "http://www.acquadro.it/post",
+        url: "http://testbotd4.azurewesites.net/post",
         data: counters
       });
 
