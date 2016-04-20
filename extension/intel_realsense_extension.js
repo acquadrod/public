@@ -1731,6 +1731,7 @@ accordance with the terms of that agreement
       console.log (" - " + counters);
       $.ajax({
         type: "POST",
+        dataType: "json",
         url: "http://testbotd4.azurewesites.net/post",
         data: counters
       });
