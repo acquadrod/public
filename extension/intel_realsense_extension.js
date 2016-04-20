@@ -1727,6 +1727,7 @@ accordance with the terms of that agreement
         console.log(counters);
     };
 
+
     ext.send_counters = function () {
       console.log (" - " + counters);
       $.ajax({
